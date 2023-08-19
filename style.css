@@ -4,10 +4,14 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    color: #E5E7EB;
 }
 
 .hero, footer {
@@ -32,13 +36,8 @@ footer {
 
 .header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-}
-
-ul {
-    list-style: none;
 }
 
 a {
@@ -51,10 +50,9 @@ a {
     margin: 16px;
 }
 
-.links, .main {
+.main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
@@ -81,10 +79,98 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item {
     display: flex;
     flex-direction: column;
     padding: 8px;
+}
+
+button, .call {
+    background-color: #3882F6
+}
+
+button {
+    border-radius: 25px;
+    color: #E5E7EB;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-color: #E5E7EB;
+}
+
+.call {
+    padding: 20px;
+    color: #E5E7EB;
+}
+
+.callContent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.callText {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.callButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ad {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quoteText p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.author p {
+    text-align: right;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.author {
+    text-align: right;
+}
+
+.callFirst {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.call p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.gallery img {
+    border-radius: 25px;
+    border-color: #3882F6;
+    border-style: solid;
+}
+
+.galleryTitle {
+    text-align: center;
+    font-size: 20px;
 }
